@@ -1,0 +1,26 @@
+
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Polygon?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Pane layoutX="1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+                <children>
+                    <Circle fx:id="face" fill="DODGERBLUE" layoutX="304.0" layoutY="200.0" radius="162.0" stroke="BLACK" strokeType="INSIDE" />
+                    <Ellipse fx:id="nose" fill="#3eff1f" layoutX="304.0" layoutY="200.0" onMouseClicked="#OnNoseClick" radiusX="26.0" radiusY="37.0" stroke="BLACK" strokeType="INSIDE" />
+                    <Circle fx:id="leftEye" layoutX="235.0" layoutY="119.0" onMouseClicked="#OnLeftEyeClick" radius="37.0" stroke="BLACK" strokeType="INSIDE" />
+                    <Circle fx:id="rightEye" layoutX="367.0" layoutY="119.0" onMouseClicked="#OnRightEyeClick" radius="37.0" stroke="BLACK" strokeType="INSIDE" />
+                    <Polygon fx:id="mouth" fill="#cced28" layoutX="289.0" layoutY="324.0" onMouseClicked="#OnMouthClick" points="-52.0, -56.0, 82.0, -56.0, 15.0, -3.0" stroke="BLACK" strokeType="INSIDE" />
+                </children>
+            </Pane>
+        </children>
+    </AnchorPane>
+
+</GridPane>
